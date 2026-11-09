@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mini Cinema | Đặt vé xem phim</title>
+
+    <!-- Ket noi CSS -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- 1. HEADER - THANH DIEU HUONG -->
+    <!-- ============================= -->
+
+    <header class="topbar">
+
+        <a class="logo" href="#home">
+            🎬 MINI<span>CINEMA</span>
+        </a>
+
+        <nav>
+            <a href="#home">Phim đang chiếu</a>
+
+            <a href="#tickets">Vé của tôi</a>
+
+            <a href="/admin.html" id="adminNav" class="hidden">
+                Quản trị ⚙️
+            </a>
+        </nav>
+
+        <div id="account"></div>
+
+    </header>
+
+
+    <!-- ============================= -->
+    <!-- 2. NOI DUNG CHINH -->
+    <!-- ============================= -->
+
+    <main class="container">
+
+        <!-- GIOI THIEU WEBSITE -->
+
+        <section id="hero">
+
+            <span class="pill">
+                 MINI CINEMA
+            </span>
+
+            <h1>
+                Chọn phim hay.
+                <br>
+                <em>Đặt ghế ngay.</em>
+            </h1>
+
+            <p>
+                Website đặt vé xem phim đơn giản,
+                dễ sử dụng và dễ trình bày.
+            </p>
+
+            <a class="primary inline" href="#home">
+                Khám phá phim →
+            </a>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- 3. TRANG CHU - DANH SACH PHIM -->
+        <!-- ============================= -->
+
+        <section id="home" class="panel">
+
+            <div class="section-head">
+
+                <div>
+                    <small>KHÁM PHÁ</small>
+                    <h2>Phim đang chiếu</h2>
+                </div>
+
+                <input
+                    id="search"
+                    type="text"
+                    placeholder="🔎 Tìm tên phim..."
+                    aria-label="Tìm phim"
+                >
+
+            </div>
+
+            <!-- JavaScript hien thi danh sach phim tai day -->
+            <div id="movieList" class="movies"></div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- 4. TRANG DAT VE -->
+        <!-- ============================= -->
+
+        <section id="booking" class="panel hidden">
+
+            <div class="section-head">
+
+                <div>
+                    <small>ĐẶT VÉ</small>
+                    <h2 id="bookingTitle">
+                        Chọn suất chiếu
+                    </h2>
+                </div>
+
+                <button class="ghost" id="backBtn">
+                    ← Quay lại
+                </button>
+
+            </div>
+
+            <!-- Danh sach suat chieu -->
+            <div id="showtimeArea"></div>
+
+
+            <!-- KHU VUC CHON GHE -->
+
+            <div id="seatArea" class="hidden">
+
+                <h3>Chọn ghế</h3>
+
+                <p class="muted">
+                    Màn hình ở phía trên.
+                    Ghế đã đặt không thể chọn.
+                </p>
+
+                <div class="screen">
+                    MÀN HÌNH
+                </div>
+
+                <!-- JavaScript tao cac ghe -->
+                <div id="seatGrid" class="seats"></div>
+
+
+                <!-- CHU THICH TRANG THAI GHE -->
+
+                <div class="legend">
+
+                    <span>⬜ Ghế trống</span>
+
+                    <span>🟥 Đã đặt</span>
+
+                    <span>🟨 Đang chọn</span>
+
+                </div>
+
+
+                <!-- MA GIAM GIA KHUYEN MAI -->
+                <div class="coupon-area" style="margin: 20px 0 10px; display: flex; gap: 10px; align-items: center; max-width: 420px;">
+                    <input
+                        type="text"
+                        id="couponInput"
+                        placeholder="🏷️ Nhập mã giảm giá (VD: CINEMA10)"
+                        style="flex: 1; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); text-transform: uppercase;"
+                    >
+                    <button
+                        type="button"
+                        id="applyCouponBtn"
+                        class="ghost"
+                        style="padding: 10px 16px; white-space: nowrap;"
+                    >
+                        Áp dụng
+                    </button>
+                </div>
+                <div id="couponMsg" class="muted" style="font-size: 0.85rem; margin-bottom: 15px;"></div>
+
+                <!-- XAC NHAN DAT VE -->
+
+                <div class="checkout">
+
+                    <strong id="selection">
+                        Chưa chọn ghế
+                    </strong>
+
+                    <button
+                        class="primary"
+                        id="confirmBooking"
+                        disabled
+                    >
+                        Xác nhận đặt vé
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- 5. TRANG VE CUA TOI -->
+        <!-- ============================= -->
+
+        <section id="tickets" class="panel hidden">
+
+            <div class="section-head">
+
+                <div>
+                    <small>TÀI KHOẢN</small>
+                    <h2>Vé của tôi</h2>
+                </div>
+
+            </div>
+
+            <!-- Hien thi nhung ve da dat -->
+            <div id="ticketList"></div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- 6. TRANG QUAN TRI -->
+        <!-- ============================= -->
+
+        <section id="admin" class="panel hidden">
+
+            <div class="section-head">
+
+                <div>
+                    <small>QUẢN LÝ</small>
+                    <h2>Quản lý phim</h2>
+                </div>
+
+            </div>
+
+
+            <!-- FORM THEM / SUA PHIM -->
+
+            <form id="movieForm" class="form gridform">
+
+                <input
+                    id="movieId"
+                    type="hidden"
+                >
+
+                <label>
+                    Tên phim
+
+                    <input
+                        id="movieTitle"
+                        type="text"
+                        required
+                        maxlength="100"
+                    >
+                </label>
+
+                <label>
+                    Thể loại
+
+                    <input
+                        id="movieGenre"
+                        type="text"
+                        required
+                        maxlength="60"
+                    >
+                </label>
+
+                <label>
+                    Thời lượng (phút)
+
+                    <input
+                        id="movieDuration"
+                        type="number"
+                        min="1"
+                        max="400"
+                        required
+                    >
+                </label>
+
+                <label>
+                    Mô tả
+
+                    <input
+                        id="movieDescription"
+                        type="text"
+                        maxlength="300"
+                    >
+                </label>
+
+
+                <!-- NUT LUU VA NHAP LAI -->
+
+                <button class="primary" type="submit">
+                    Lưu phim
+                </button>
+
+                <button
+                    class="ghost"
+                    id="cancelEdit"
+                    type="button"
+                >
+                    Nhập lại
+                </button>
+
+            </form>
+
+
+            <!-- DANH SACH PHIM QUAN LY -->
+
+            <div id="adminMovies" class="admin-list"></div>
+
+            <p class="muted">
+                Demo: Phim đã có suất chiếu sẽ không thể
+                xóa để bảo toàn dữ liệu vé.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ============================= -->
+    <!-- 7. FOOTER - CHAN TRANG -->
+    <!-- ============================= -->
+
+    <footer>Mini Cinema 🎬 Thế giới điện ảnh trong tầm tay</footer>
+
+
+    <!-- ============================= -->
+    <!-- 8. FORM DANG NHAP / DANG KY -->
+    <!-- ============================= -->
+
+    <dialog id="authDialog">
+
+        <form id="authForm" class="form">
+
+            <!-- Nut dong -->
+            <button
+                type="button"
+                class="close"
+                id="closeDialog"
+            >
+                ✕
+            </button>
+
+            <h2 id="authTitle">
+                Đăng nhập
+            </h2>
+
+
+            <!-- Ho ten khi dang ky -->
+
+            <label id="nameWrap" class="hidden">
+                Họ tên
+
+                <input
+                    id="authName"
+                    type="text"
+                    autocomplete="name"
+                >
+            </label>
+
+
+            <!-- EMAIL -->
+
+            <label>
+                Email
+
+                <input
+                    id="authEmail"
+                    type="email"
+                    autocomplete="email"
+                    required
+                >
+            </label>
+
+
+            <!-- MAT KHAU -->
+
+            <label>
+                Mật khẩu
+
+                <input
+                    id="authPassword"
+                    type="password"
+                    minlength="6"
+                    autocomplete="current-password"
+                    required
+                >
+            </label>
+
+
+            <!-- NUT DANG NHAP -->
+
+            <button
+                class="primary"
+                id="authSubmit"
+                type="submit"
+            >
+                Đăng nhập
+            </button>
+
+
+            <!-- CHUYEN SANG DANG KY -->
+
+            <button
+                class="linkbtn"
+                type="button"
+                id="toggleAuth"
+            >
+                Chưa có tài khoản? Đăng ký
+            </button>
+
+
+            <!-- TAI KHOAN DEMO -->
+
+            <p class="muted tiny">
+                Tài khoản quản trị demo:
+                admin@mini.vn / Admin123!
+            </p>
+
+        </form>
+
+    </dialog>
+
+
+    <!-- ============================= -->
+    <!-- 9. THONG BAO -->
+    <!-- ============================= -->
+
+    <div
+        id="toast"
+        class="toast hidden"
+        role="status"
+        aria-live="polite"
+    ></div>
+
+
+    <!-- ============================= -->
+    <!-- 10. KET NOI JAVASCRIPT -->
+    <!-- ============================= -->
+
+    <script src="/app.js" defer></script>
+
+</body>
+
+</html>
