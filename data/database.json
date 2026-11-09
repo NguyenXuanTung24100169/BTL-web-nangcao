@@ -1,0 +1,389 @@
+{
+  "users": [
+    {
+      "id": "admin-1",
+      "name": "Quản trị viên",
+      "email": "admin@mini.vn",
+      "role": "admin",
+      "status": "active",
+      "salt": "7f584baa936205ace5ac3339d981d299",
+      "passwordHash": "e167cda736c147f08bded3e6b0a71b0b7f7b0580c57e2f4ff8e16364392531c1bc0b26fdcd068cbb4c7dc2aca3f2cedf1658222f80b8570b20a1403586362fc4",
+      "createdAt": "2026-10-01T08:00:00.000Z"
+    },
+    {
+      "id": "06fa9435-e245-4591-8320-0b44555b80f4",
+      "name": "Nguyen Thanh Vinh",
+      "email": "hvinh0961@gmail.com",
+      "role": "user",
+      "status": "active",
+      "salt": "61d9c78eb23dfbe9dd80599bf801c438",
+      "passwordHash": "fcb84e18d3e6964d8152205a63526ee661b7d58e87d29aae1d1793fb4bee0c3cba953fa20f21e33da6a24fb345346b0f07a4179edbe863686d0c3635c9ab3e80",
+      "createdAt": "2026-10-31T07:20:00.000Z"
+    },
+    {
+      "id": "23eb653d-0298-44cc-97cd-ffd6ccb16f1b",
+      "name": "Nguyen Thanh Vinh",
+      "email": "24100189@st.phenikaa-uni.edu.vn",
+      "role": "user",
+      "status": "active",
+      "salt": "02db138bb5e31301277e2de5b0592f9f",
+      "passwordHash": "3689c69a4d4e43defeb9096dd065bf119993ec2703b861c952c3f0eabac54eb7db46fdb91d8e2695f2b3b12b4bbb7fcbac07fa3c85d27431e0205a79a2146197",
+      "createdAt": "2026-11-06T08:00:00.000Z"
+    },
+    {
+      "id": "b9edd065-86e5-4930-b2c9-5c0ac7cd35fb",
+      "name": "Test Regular User",
+      "email": "testuser_perm@example.com",
+      "salt": "503b04a8da6e0a6f81732091c85de845",
+      "passwordHash": "3efdd2a76e43ccef163250b6b9fa6f308252c0b90e0aa504d99f525ade341e63b6dbef4068abb1d8336db8a97dae3fb2849a90b0bd2770497365b2b2e7fcca5a",
+      "role": "user",
+      "status": "active",
+      "createdAt": "2026-11-08T14:34:35.815Z"
+    },
+    {
+      "id": "b3b67433-59c4-44ff-9689-6742f8a38a73",
+      "name": "Khách Khóa Test",
+      "email": "lock_test_1794148476102@example.com",
+      "salt": "56a060aa8b613b4cacb96a8bf3b5aac3",
+      "passwordHash": "93028f18cf85bbdb332a77b26ad89393851f611b966b168e812784f671f67ae7f5b75ee2b324700d1506aeda374939b0024e0573e36342f1fc9cf49cc48e3512",
+      "role": "user",
+      "status": "active",
+      "createdAt": "2026-11-08T14:34:36.148Z"
+    },
+    {
+      "id": "a71c87fb-d409-4de1-b4c8-1627f339a3e3",
+      "name": "Khách Khóa Test",
+      "email": "lock_test_1794148513672@example.com",
+      "salt": "161b2b8dd7478fd41d7b9899c6a30c96",
+      "passwordHash": "dec9d0773d4f8ad07fc0a9b270cfea8ececaa8cc570b777b34c5eece4aac95e8cd9f565b58e7ec8c4a4878327054729fab0c4106e8278783753e8084d5696df0",
+      "role": "user",
+      "status": "active",
+      "createdAt": "2026-11-08T14:35:13.730Z"
+    },
+    {
+      "id": "528d98b2-82ae-4e93-ac18-cae527d8d49d",
+      "name": "Khách Khóa Test",
+      "email": "lock_test_1794148533319@example.com",
+      "salt": "9deb99f412ed06c6a813cbe1347adb3d",
+      "passwordHash": "1f6643b8483e8cc90a52b220a77a9fb5ec474368066d6cef717a3f91953d01a8995d992b291c1e561c711e88c952bcdf50ba36ff5a960f787a07ca782cc74bb2",
+      "role": "user",
+      "status": "active",
+      "createdAt": "2026-11-08T14:35:33.356Z"
+    },
+    {
+      "id": "f555565c-9601-4a30-b5ef-a18f6f4f4c80",
+      "name": "Khách Khóa Test",
+      "email": "lock_test_1794148860932@example.com",
+      "salt": "861d5b1c4117019ee96760dce7906f06",
+      "passwordHash": "d3104eca96a2d351c6eba32c486cac79a796c7b41a21a7f4cb66e2506e5cf1d33f6900ac0f3b5485c072e4388c4f4b40ca5a3ba7db20606552bfc4920f02726b",
+      "role": "user",
+      "status": "active",
+      "createdAt": "2026-11-08T14:41:00.967Z"
+    },
+    {
+      "id": "54aa6262-1d31-4686-9165-f5ba4c909fdc",
+      "name": "Khách Khóa Test",
+      "email": "lock_test_1794148887501@example.com",
+      "salt": "a6d04c69002fdc8a7f645945fe14d30e",
+      "passwordHash": "bca72d63529398d7fa39310aca0b356e0a0f56860ce531a3b5dd35de67f9dec5c32cf291f1bdb923eb62ec3f44f43ca2fc53c66ca5ccf6297732c4750817f805",
+      "role": "user",
+      "status": "active",
+      "createdAt": "2026-11-08T14:41:27.539Z"
+    },
+    {
+      "id": "d57ea514-4146-47bd-8551-e4e25f3d1e0d",
+      "name": "Khách Khóa Test",
+      "email": "lock_test_1794148926758@example.com",
+      "salt": "3f7425a6a08f6f9853c2440bb986ab77",
+      "passwordHash": "8ddcccc2f2c0061e51e602a25065d5820e3940d45dd0cbfa63b5894a9cf0c6cae933d8a2ea8d4516cfc35788eded5db35601636ae64ebda84ceedb0447ec283a",
+      "role": "user",
+      "status": "active",
+      "createdAt": "2026-11-08T14:42:06.799Z"
+    }
+  ],
+  "movies": [
+    {
+      "id": "m1",
+      "title": "Mai",
+      "genre": "Tâm lý, Tình cảm",
+      "duration": 131,
+      "director": "Trấn Thành",
+      "actors": "Phương Anh Đào, Tuấn Trần, Uyển Ân, Hồng Đào",
+      "releaseDate": "2024-02-10",
+      "status": "now_showing",
+      "trailer": "https://www.youtube.com/watch?v=MaiTrailer",
+      "poster": "https://i.pinimg.com/originals/9c/74/2c/9c742c26c3762505a0cf11ff50f7a1fb.jpg",
+      "banner": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1200",
+      "description": "Câu chuyện về Mai, một người phụ nữ trải qua nhiều khó khăn trong cuộc sống và tình yêu, luôn khao khát tìm kiếm hạnh phúc."
+    },
+    {
+      "id": "m2",
+      "title": "Avengers",
+      "genre": "Hành động, Siêu anh hùng",
+      "duration": 143,
+      "director": "Anthony Russo, Joe Russo",
+      "actors": "Robert Downey Jr., Chris Evans, Scarlett Johansson, Chris Hemsworth",
+      "releaseDate": "2019-04-26",
+      "status": "now_showing",
+      "trailer": "https://www.youtube.com/watch?v=AvengersTrailer",
+      "poster": "https://th.bing.com/th/id/OIP.Ru5SWFQiVtN-QX8BfLPHAQHaJ4?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "banner": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=1200",
+      "description": "Biệt đội siêu anh hùng Avengers tập hợp để bảo vệ Trái Đất trước những thế lực nguy hiểm bậc nhất vũ trụ."
+    },
+    {
+      "id": "m3",
+      "title": "Thỏ Ơi",
+      "genre": "Tâm lý, Chính kịch",
+      "duration": 120,
+      "director": "Nguyễn Quang Dũng",
+      "actors": "Thái Hòa, Thu Trang, Kiều Minh Tuấn, Hứa Vĩ Văn",
+      "releaseDate": "2024-03-15",
+      "status": "now_showing",
+      "trailer": "https://www.youtube.com/watch?v=ThoOiTrailer",
+      "poster": "https://cdn2.tuoitre.vn/471584752817336320/2026/2/19/2-17714808145351717034450.jpg",
+      "banner": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=1200",
+      "description": "Bộ phim Việt Nam khai thác những mối quan hệ gia đình, tình cảm và các bí mật giấu kín trong cuộc sống."
+    },
+    {
+      "id": "m4",
+      "title": "Quỷ Ăn Tạng",
+      "genre": "Kinh dị, Bí ẩn",
+      "duration": 110,
+      "director": "Taweewat Wantha",
+      "actors": "Nadech Kugimiya, Denise Jelilcha Kapaun, Rattawat",
+      "releaseDate": "2023-10-26",
+      "status": "now_showing",
+      "trailer": "https://www.youtube.com/watch?v=TeeYodTrailer",
+      "poster": "https://tse2.mm.bing.net/th/id/OIP.bDzrZ2guo9ot1w6WIJyEQQHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "banner": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=1200",
+      "description": "Những hiện tượng kỳ bí và nỗi sợ hãi bao trùm khi các nhân vật phải đối mặt với một thế lực tâm linh đen tối đáng sợ."
+    }
+  ],
+  "rooms": [
+    {
+      "id": "r1",
+      "name": "Phòng 1",
+      "type": "2D Standard",
+      "rows": 4,
+      "cols": 8,
+      "totalSeats": 32,
+      "seatTypes": {
+        "A": "standard",
+        "B": "standard",
+        "C": "vip",
+        "D": "couple"
+      },
+      "disabledSeats": [],
+      "status": "active"
+    },
+    {
+      "id": "r2",
+      "name": "Phòng 2",
+      "type": "3D IMAX",
+      "rows": 4,
+      "cols": 8,
+      "totalSeats": 32,
+      "seatTypes": {
+        "A": "standard",
+        "B": "standard",
+        "C": "vip",
+        "D": "couple"
+      },
+      "disabledSeats": [],
+      "status": "active"
+    },
+    {
+      "id": "r3",
+      "name": "Phòng 3",
+      "type": "4DX Experience",
+      "rows": 4,
+      "cols": 8,
+      "totalSeats": 32,
+      "seatTypes": {
+        "A": "standard",
+        "B": "vip",
+        "C": "vip",
+        "D": "couple"
+      },
+      "disabledSeats": [],
+      "status": "active"
+    }
+  ],
+  "showtimes": [
+    {
+      "id": "s1",
+      "movieId": "m1",
+      "roomId": "r1",
+      "room": "Phòng 1",
+      "date": "2026-11-09",
+      "startTime": "18:00",
+      "endTime": "20:25",
+      "time": "Thứ Hai – 18:00",
+      "price": 75000,
+      "status": "active"
+    },
+    {
+      "id": "s2",
+      "movieId": "m1",
+      "roomId": "r1",
+      "room": "Phòng 1",
+      "date": "2026-11-10",
+      "startTime": "20:00",
+      "endTime": "22:25",
+      "time": "Thứ Ba – 20:00",
+      "price": 85000,
+      "status": "active"
+    },
+    {
+      "id": "s3",
+      "movieId": "m2",
+      "roomId": "r2",
+      "room": "Phòng 2",
+      "date": "2026-11-09",
+      "startTime": "19:00",
+      "endTime": "21:35",
+      "time": "Thứ Hai – 19:00",
+      "price": 75000,
+      "status": "active"
+    },
+    {
+      "id": "s4",
+      "movieId": "m3",
+      "roomId": "r1",
+      "room": "Phòng 1",
+      "date": "2026-11-11",
+      "startTime": "17:00",
+      "endTime": "19:15",
+      "time": "Thứ Tư – 17:00",
+      "price": 65000,
+      "status": "active"
+    },
+    {
+      "id": "s5",
+      "movieId": "m4",
+      "roomId": "r2",
+      "room": "Phòng 2",
+      "date": "2026-11-12",
+      "startTime": "20:30",
+      "endTime": "22:35",
+      "time": "Thứ Năm – 20:30",
+      "price": 85000,
+      "status": "active"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "9c8f7258-7cc6-49af-ae89-72a52076910f",
+      "userId": "06fa9435-e245-4591-8320-0b44555b80f4",
+      "showtimeId": "s3",
+      "seat": "D2",
+      "seatType": "couple",
+      "price": 75000,
+      "discountAmount": 0,
+      "finalPrice": 75000,
+      "status": "confirmed",
+      "paymentStatus": "paid",
+      "createdAt": "2026-10-31T07:28:46.003Z"
+    },
+    {
+      "id": "39b0d74a-0e93-4b21-8843-28e939ffa1e6",
+      "userId": "06fa9435-e245-4591-8320-0b44555b80f4",
+      "showtimeId": "s5",
+      "seat": "B3",
+      "seatType": "standard",
+      "price": 85000,
+      "discountAmount": 0,
+      "finalPrice": 85000,
+      "status": "confirmed",
+      "paymentStatus": "paid",
+      "createdAt": "2026-10-31T07:29:07.683Z"
+    },
+    {
+      "id": "077caeb5-214e-47fa-bb2b-eb9916a44464",
+      "userId": "23eb653d-0298-44cc-97cd-ffd6ccb16f1b",
+      "showtimeId": "s3",
+      "seat": "C4",
+      "seatType": "vip",
+      "price": 75000,
+      "discountAmount": 0,
+      "finalPrice": 75000,
+      "status": "cancelled",
+      "paymentStatus": "refunded",
+      "createdAt": "2026-11-06T08:09:01.100Z",
+      "cancelledAt": "2026-11-06T08:42:33.236Z"
+    },
+    {
+      "id": "95f214be-a844-4660-8206-7f63b3f6de60",
+      "userId": "23eb653d-0298-44cc-97cd-ffd6ccb16f1b",
+      "showtimeId": "s1",
+      "seat": "D4",
+      "seatType": "couple",
+      "price": 75000,
+      "discountAmount": 0,
+      "finalPrice": 75000,
+      "status": "cancelled",
+      "paymentStatus": "refunded",
+      "createdAt": "2026-11-06T08:22:17.369Z",
+      "cancelledAt": "2026-11-06T08:42:30.896Z"
+    },
+    {
+      "id": "7907ad11-546e-4dc4-a55b-10336e7caf7e",
+      "userId": "23eb653d-0298-44cc-97cd-ffd6ccb16f1b",
+      "showtimeId": "s4",
+      "seat": "C1",
+      "seatType": "vip",
+      "price": 78000,
+      "discountAmount": 0,
+      "finalPrice": 78000,
+      "promoCode": null,
+      "status": "refunded",
+      "paymentStatus": "refunded",
+      "createdAt": "2026-11-08T14:47:51.915Z",
+      "refundedAt": "2026-11-08T14:48:44.672Z"
+    }
+  ],
+  "promotions": [
+    {
+      "id": "promo-1",
+      "code": "CINEMA10",
+      "description": "Giảm 10% tối đa 30.000đ cho mọi đơn đặt vé",
+      "discountType": "percent",
+      "discountValue": 10,
+      "minSpend": 50000,
+      "maxDiscount": 30000,
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31",
+      "maxUsage": 100,
+      "usedCount": 3,
+      "status": "active"
+    },
+    {
+      "id": "promo-2",
+      "code": "GIAM20K",
+      "description": "Giảm ngay 20.000đ cho đơn hàng từ 70.000đ",
+      "discountType": "fixed",
+      "discountValue": 20000,
+      "minSpend": 70000,
+      "maxDiscount": 20000,
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31",
+      "maxUsage": 50,
+      "usedCount": 5,
+      "status": "active"
+    },
+    {
+      "id": "promo-3",
+      "code": "VIPMEMBER",
+      "description": "Ưu đãi thành viên VIP - Giảm 20% tối đa 50.000đ",
+      "discountType": "percent",
+      "discountValue": 20,
+      "minSpend": 100000,
+      "maxDiscount": 50000,
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31",
+      "maxUsage": 200,
+      "usedCount": 12,
+      "status": "active"
+    }
+  ]
+}
