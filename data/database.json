@@ -99,6 +99,16 @@
       "role": "user",
       "status": "active",
       "createdAt": "2026-11-08T14:42:06.799Z"
+    },
+    {
+      "id": "f79ef646-7f1d-47c5-9a67-30f5d3b7ac40",
+      "name": "ung",
+      "email": "vinhngulon@gmail.com",
+      "salt": "f93d7683d7257301d0184dc8707ffc45",
+      "passwordHash": "fbd8d6d6a7d16105538ecf0b62c4c177c9602317d95ff212b264a6a1137b019a531b5622095716943be3ecf132debb0995451c014492ef9b74fde113e93b44e9",
+      "role": "user",
+      "status": "active",
+      "createdAt": "2026-11-09T21:18:53.894Z"
     }
   ],
   "movies": [
@@ -340,6 +350,21 @@
       "paymentStatus": "refunded",
       "createdAt": "2026-11-08T14:47:51.915Z",
       "refundedAt": "2026-11-08T14:48:44.672Z"
+    },
+    {
+      "id": "36db5c7f-bad1-407b-8544-187070688de5",
+      "userId": "f79ef646-7f1d-47c5-9a67-30f5d3b7ac40",
+      "showtimeId": "s1",
+      "seat": "C4",
+      "seatType": "vip",
+      "price": 90000,
+      "discountAmount": 0,
+      "finalPrice": 90000,
+      "promoCode": null,
+      "status": "confirmed",
+      "paymentStatus": "paid",
+      "createdAt": "2026-11-09T21:19:05.323Z",
+      "paidAt": "2026-11-09T21:19:18.413Z"
     }
   ],
   "promotions": [
@@ -384,6 +409,29 @@
       "maxUsage": 200,
       "usedCount": 12,
       "status": "active"
+    }
+  ],
+  "payments": [
+    {
+      "id": "b8c5aa58-4ab1-415c-813a-d6a5e5c313a0",
+      "bookingId": "36db5c7f-bad1-407b-8544-187070688de5",
+      "userId": "f79ef646-7f1d-47c5-9a67-30f5d3b7ac40",
+      "amount": 90000,
+      "method": "bank_demo",
+      "status": "paid",
+      "paidAt": "2026-11-09T21:19:18.413Z",
+      "note": "Thanh toán mô phỏng, không chuyển tiền thật"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "6fdfd43f-4c65-42a6-a6c1-0ce0012c76ac",
+      "movieId": "m1",
+      "userId": "f79ef646-7f1d-47c5-9a67-30f5d3b7ac40",
+      "rating": 5,
+      "comment": "dtv",
+      "createdAt": "2026-11-09T21:19:30.181Z",
+      "updatedAt": "2026-11-09T21:19:30.181Z"
     }
   ]
 }
