@@ -15,6 +15,7 @@ const app = express();
 // Cho phép payload JSON lên đến 10MB (hỗ trợ upload ảnh dạng Base64)
 app.use(express.json({ limit: '10mb' }));
 app.use(express.static(path.join(__dirname, '..', 'public')));
+require('./cinemaExtras')(app);
 
 // Đảm bảo thư mục uploads tồn tại
 const uploadsDir = path.join(__dirname, '..', 'public', 'uploads');
@@ -825,7 +826,7 @@ app.post('/api/bookings', authenticate, (req, res) => {
         finalPrice: finalPrice,
         promoCode: appliedPromo || null,
         status: 'confirmed',
-        paymentStatus: 'paid',
+        paymentStatus: 'pending',
         createdAt: new Date().toISOString()
     };
 
@@ -851,7 +852,9 @@ app.delete('/api/bookings/:id', authenticate, (req, res) => {
     }
 
     booking.status = 'cancelled';
-    booking.paymentStatus = 'refunded';
+    booking.paymentStatus = booking.paymentStatus === 'paid'
+  ? 'refunded'
+  : 'cancelled';
     booking.cancelledAt = new Date().toISOString();
     writeDB(db);
 

@@ -1,0 +1,166 @@
+
+.topbar nav .extra-nav {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: var(--muted, #a1a1aa);
+  font: inherit;
+  white-space: nowrap;
+}
+
+.topbar nav .extra-nav:hover {
+  color: var(--primary, #ef4444);
+}
+
+dialog.extra-dialog {
+  width: min(740px, 95vw);
+  max-width: 740px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 24px;
+  color: var(--text, #f8fafc);
+  background: var(--surface, #1b1d2a);
+  border: 1px solid var(--border, #3f4152);
+  border-radius: 16px;
+}
+
+.extra-dialog .extra-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.extra-dialog .extra-heading h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.extra-dialog .extra-close {
+  color: white;
+  background: transparent;
+  border: 0;
+  font-size: 22px;
+}
+
+.extra-dialog .extra-note {
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  color: #fcd34d;
+  background: #3b2a12;
+  border-radius: 8px;
+}
+
+.extra-dialog .extra-ticket,
+.extra-dialog .extra-review,
+.extra-dialog #extraReviewForm {
+  padding: 15px;
+  margin: 12px 0;
+  border: 1px solid var(--border, #3f4152);
+  border-radius: 10px;
+  background: var(--surface-light, #282b3b);
+}
+
+.extra-dialog .extra-line,
+.extra-dialog .extra-pay-controls,
+.extra-dialog .extra-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.extra-dialog .extra-ticket p,
+.extra-dialog .extra-review p {
+  margin: 8px 0;
+}
+
+.extra-dialog .extra-ticket small,
+.extra-dialog .extra-review small,
+.extra-dialog #extraReviewForm small {
+  display: block;
+  color: var(--muted, #a1a1aa);
+  overflow-wrap: anywhere;
+}
+
+.extra-dialog .extra-amount {
+  color: #fca5a5;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.extra-dialog select,
+.extra-dialog textarea {
+  width: 100%;
+  margin: 8px 0 14px;
+  padding: 10px;
+  border-radius: 8px;
+  color: var(--text, #fff);
+  background: #161823;
+  border: 1px solid var(--border, #3f4152);
+  font: inherit;
+}
+
+.extra-dialog textarea {
+  resize: vertical;
+}
+
+.extra-dialog .extra-method {
+  flex: 1 1 210px;
+  margin: 8px 0;
+}
+
+.extra-dialog .extra-label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.extra-dialog .extra-button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background: var(--primary, #ef4444);
+  font: inherit;
+  font-weight: 600;
+}
+
+.extra-dialog .extra-button:hover {
+  filter: brightness(1.1);
+}
+
+.extra-dialog .extra-button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.extra-dialog .extra-danger {
+  background: #6b7280;
+}
+
+.extra-dialog .extra-rating-summary {
+  padding: 14px 0;
+  font-size: 1.1rem;
+  color: #fcd34d;
+}
+
+.extra-dialog .extra-error {
+  color: #fca5a5;
+}
+
+.extra-dialog h3 {
+  margin: 12px 0;
+}
+
+@media (max-width: 700px) {
+  dialog.extra-dialog {
+    padding: 16px;
+  }
+
+  .topbar nav .extra-nav {
+    font-size: .9rem;
+  }
+}
